@@ -9,8 +9,8 @@ const Todo = ({ todo, index, completeTodo,unCompleteTodo, removeTodo }) => {
     }
   };
     return (
-      <div className='row d-flex justify-between m-4'>
-      <div className=' col-sm-8' style={{ textDecoration: todo.isCompleted ? 'line-through' : '' }}>
+      <div className='row d-flex justify-between mt-4 mb-4 '>
+      <div className=' pt-2 col-sm-8' style={{ textDecoration: todo.isCompleted ? 'line-through' : '' }}>
         {todo.text}
         </div>
         <div className='col-sm-4'>

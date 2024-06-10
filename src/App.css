@@ -3,6 +3,7 @@
   text-align: center;
   background-image: linear-gradient(aqua,lightgreen);
   height: 100vh;
+  overflow: hidden;
 }
 
 
