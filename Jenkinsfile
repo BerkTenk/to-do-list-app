@@ -1,15 +1,4 @@
-pipeline {
-    agent { label 'built-in' }
-
-    triggers {
-        githubPullRequest {
-            useGitHubHooks()
-            orgWhitelist(['BerkTenk']) // İzin verilen kullanıcı veya organizasyon
-            allowMembersOfWhitelistedOrgsAsAdmin()
-        }
-    }
-
-    stages {
+stages {
         stage('Checkout') {
             steps {
                 git 'https://github.com/BerkTenk/to-do-list-app.git'
