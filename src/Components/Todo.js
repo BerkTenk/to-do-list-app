@@ -1,7 +1,6 @@
 import React from 'react'
 import Button from "react-bootstrap/Button"
 import { FaTrash } from "react-icons/fa";
-console.log("deneme- pr test");
 const Todo = ({ todo, index, completeTodo,unCompleteTodo, removeTodo }) => {
   const handleRemove = () => {
     if (window.confirm("This task will be deleted. Are you sure ?")){
