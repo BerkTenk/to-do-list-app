@@ -1,8 +1,5 @@
 node('built-in'){
-   triggers {
-        cron('H */6 * * *') // Her 6 saatte bir tetiklenir
-      pollSCM('* * * * *')
-    }
+  
    stage('Checkout') {
         git 'https://github.com/BerkTenk/to-do-list-app.git'
     }
